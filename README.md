@@ -1,6 +1,6 @@
 # PaSTiLa (Parallel Automatic Snippet-based Time series Labeling Algorithm)
 
-This repository is related to the PaSTiLa (Parallel Automatic Snippet-based Time series Labeling Algorithm) algorithm that automates pattern discovery in large time series with a graphics processor. PaSTiLa is authored by Andrey Goglachev (goglachevai@susu.ru) and Mikhail Zymbler (mzym@susu.ru), South Ural State University, Chelyabinsk, Russia. The repository contains the PaSTiLa's source code (in C, CUDA, Python).
+This repository is related to the PaSTiLa (Parallel Automatic Snippet-based Time series Labeling Algorithm) algorithm that automates pattern discovery in large time series with a graphics processor. PaSTiLa is authored by Andrey Goglachev (goglachevai@susu.ru) and Mikhail Zymbler (mzym@susu.ru), South Ural State University, Chelyabinsk, Russia. The repository contains the PaSTiLa's source code (Python).
 
 PaSTiLa serves as a wrapper for the **PDSS** (C22dist-based pattern discovery) and **PSF** (MPdist-based pattern discovery) algorithms located in the `algorithms/` directory. PaSTiLa predicts execution time for each segment length, distributes tasks across GPUs for load balancing, executes the binaries, and then selects the optimal segment length by comparing normalized snippet profiles.
 
